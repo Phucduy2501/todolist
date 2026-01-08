@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./App.css";
+import GoogleMapEmbed from "./GoogleMapEmbed";
+
 
 function App() {
   const [task, setTask] = useState("");
@@ -17,8 +19,8 @@ function App() {
 
   return (
     <div className="container">
+      <GoogleMapEmbed />
       <h1>📝 Todo List</h1>
-
       <input
         type="text"
         placeholder="Nhập công việc..."
